@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B18648D2149565B90053D71F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18648D1149565B90053D71F /* Foundation.framework */; };
+		B186490514956F180053D71F /* GCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648E214956F180053D71F /* GCAlertView.h */; };
+		B186490614956F180053D71F /* GCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648E314956F180053D71F /* GCAlertView.m */; };
+		B186490714956F180053D71F /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648E614956F180053D71F /* DDXMLElementAdditions.h */; };
+		B186490814956F180053D71F /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648E714956F180053D71F /* DDXMLElementAdditions.m */; };
+		B186490914956F180053D71F /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648E914956F180053D71F /* NSString+DDXML.h */; };
+		B186490A14956F180053D71F /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648EA14956F180053D71F /* NSString+DDXML.m */; };
+		B186490B14956F180053D71F /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648EB14956F180053D71F /* DDXML.h */; };
+		B186490C14956F180053D71F /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648EC14956F180053D71F /* DDXMLDocument.h */; };
+		B186490D14956F180053D71F /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648ED14956F180053D71F /* DDXMLDocument.m */; };
+		B186490E14956F180053D71F /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648EE14956F180053D71F /* DDXMLElement.h */; };
+		B186490F14956F180053D71F /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648EF14956F180053D71F /* DDXMLElement.m */; };
+		B186491014956F180053D71F /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648F014956F180053D71F /* DDXMLNode.h */; };
+		B186491114956F180053D71F /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648F114956F180053D71F /* DDXMLNode.m */; };
+		B186491214956F180053D71F /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648F314956F180053D71F /* DDXMLPrivate.h */; };
+		B186491314956F180053D71F /* ABNotice.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648F514956F180053D71F /* ABNotice.h */; };
+		B186491414956F180053D71F /* ABNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648F614956F180053D71F /* ABNotice.m */; };
+		B186491514956F180053D71F /* ABNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648F714956F180053D71F /* ABNotifier.h */; };
+		B186491614956F180053D71F /* ABNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648F814956F180053D71F /* ABNotifier.m */; };
+		B186491714956F180053D71F /* ABNotifierDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648F914956F180053D71F /* ABNotifierDelegate.h */; };
+		B186491814956F180053D71F /* ABNotifierFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = B18648FA14956F180053D71F /* ABNotifierFunctions.h */; };
+		B186491914956F180053D71F /* ABNotifierFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B18648FB14956F180053D71F /* ABNotifierFunctions.m */; };
+		B186491C14956F4A0053D71F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B186491B14956F4A0053D71F /* SystemConfiguration.framework */; };
+		B186491E14956F4F0053D71F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B186491D14956F4F0053D71F /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B18648CE149565B90053D71F /* libAirbrake.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirbrake.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18648D1149565B90053D71F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B18648D5149565B90053D71F /* Airbrake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airbrake-Prefix.pch"; sourceTree = "<group>"; };
+		B18648E214956F180053D71F /* GCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAlertView.h; sourceTree = "<group>"; };
+		B18648E314956F180053D71F /* GCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertView.m; sourceTree = "<group>"; };
+		B18648E614956F180053D71F /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		B18648E714956F180053D71F /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		B18648E914956F180053D71F /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		B18648EA14956F180053D71F /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		B18648EB14956F180053D71F /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		B18648EC14956F180053D71F /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		B18648ED14956F180053D71F /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		B18648EE14956F180053D71F /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		B18648EF14956F180053D71F /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		B18648F014956F180053D71F /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		B18648F114956F180053D71F /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		B18648F314956F180053D71F /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		B18648F514956F180053D71F /* ABNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotice.h; sourceTree = "<group>"; };
+		B18648F614956F180053D71F /* ABNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotice.m; sourceTree = "<group>"; };
+		B18648F714956F180053D71F /* ABNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifier.h; sourceTree = "<group>"; };
+		B18648F814956F180053D71F /* ABNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifier.m; sourceTree = "<group>"; };
+		B18648F914956F180053D71F /* ABNotifierDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierDelegate.h; sourceTree = "<group>"; };
+		B18648FA14956F180053D71F /* ABNotifierFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierFunctions.h; sourceTree = "<group>"; };
+		B18648FB14956F180053D71F /* ABNotifierFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifierFunctions.m; sourceTree = "<group>"; };
+		B18648FD14956F180053D71F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B18648FE14956F180053D71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B18648FF14956F180053D71F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B186490014956F180053D71F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B186490114956F180053D71F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B186490214956F180053D71F /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B186490314956F180053D71F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/HTNotifier.strings; sourceTree = "<group>"; };
+		B186490414956F180053D71F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HTNotifier.strings"; sourceTree = "<group>"; };
+		B186491B14956F4A0053D71F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B186491D14956F4F0053D71F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B18648CB149565B90053D71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B186491E14956F4F0053D71F /* libxml2.dylib in Frameworks */,
+				B186491C14956F4A0053D71F /* SystemConfiguration.framework in Frameworks */,
+				B18648D2149565B90053D71F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B18648C3149565B90053D71F = {
+			isa = PBXGroup;
+			children = (
+				B186491D14956F4F0053D71F /* libxml2.dylib */,
+				B186491B14956F4A0053D71F /* SystemConfiguration.framework */,
+				B18648D3149565B90053D71F /* Airbrake */,
+				B18648D0149565B90053D71F /* Frameworks */,
+				B18648CF149565B90053D71F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B18648CF149565B90053D71F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B18648CE149565B90053D71F /* libAirbrake.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18648D0149565B90053D71F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B18648D1149565B90053D71F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B18648D3149565B90053D71F /* Airbrake */ = {
+			isa = PBXGroup;
+			children = (
+				B18648E114956F180053D71F /* gcalertview */,
+				B18648E414956F180053D71F /* kissxml */,
+				B18648F414956F180053D71F /* notifier */,
+				B18648D4149565B90053D71F /* Supporting Files */,
+			);
+			path = Airbrake;
+			sourceTree = "<group>";
+		};
+		B18648D4149565B90053D71F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B18648D5149565B90053D71F /* Airbrake-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B18648E114956F180053D71F /* gcalertview */ = {
+			isa = PBXGroup;
+			children = (
+				B18648E214956F180053D71F /* GCAlertView.h */,
+				B18648E314956F180053D71F /* GCAlertView.m */,
+			);
+			path = gcalertview;
+			sourceTree = "<group>";
+		};
+		B18648E414956F180053D71F /* kissxml */ = {
+			isa = PBXGroup;
+			children = (
+				B18648E514956F180053D71F /* Additions */,
+				B18648E814956F180053D71F /* Categories */,
+				B18648EB14956F180053D71F /* DDXML.h */,
+				B18648EC14956F180053D71F /* DDXMLDocument.h */,
+				B18648ED14956F180053D71F /* DDXMLDocument.m */,
+				B18648EE14956F180053D71F /* DDXMLElement.h */,
+				B18648EF14956F180053D71F /* DDXMLElement.m */,
+				B18648F014956F180053D71F /* DDXMLNode.h */,
+				B18648F114956F180053D71F /* DDXMLNode.m */,
+				B18648F214956F180053D71F /* Private */,
+			);
+			path = kissxml;
+			sourceTree = "<group>";
+		};
+		B18648E514956F180053D71F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				B18648E614956F180053D71F /* DDXMLElementAdditions.h */,
+				B18648E714956F180053D71F /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		B18648E814956F180053D71F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B18648E914956F180053D71F /* NSString+DDXML.h */,
+				B18648EA14956F180053D71F /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B18648F214956F180053D71F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				B18648F314956F180053D71F /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		B18648F414956F180053D71F /* notifier */ = {
+			isa = PBXGroup;
+			children = (
+				B18648F514956F180053D71F /* ABNotice.h */,
+				B18648F614956F180053D71F /* ABNotice.m */,
+				B18648F714956F180053D71F /* ABNotifier.h */,
+				B18648F814956F180053D71F /* ABNotifier.m */,
+				B18648F914956F180053D71F /* ABNotifierDelegate.h */,
+				B18648FA14956F180053D71F /* ABNotifierFunctions.h */,
+				B18648FB14956F180053D71F /* ABNotifierFunctions.m */,
+				B18648FC14956F180053D71F /* HTNotifier.strings */,
+			);
+			path = notifier;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B18648CC149565B90053D71F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B186490514956F180053D71F /* GCAlertView.h in Headers */,
+				B186490714956F180053D71F /* DDXMLElementAdditions.h in Headers */,
+				B186490914956F180053D71F /* NSString+DDXML.h in Headers */,
+				B186490B14956F180053D71F /* DDXML.h in Headers */,
+				B186490C14956F180053D71F /* DDXMLDocument.h in Headers */,
+				B186490E14956F180053D71F /* DDXMLElement.h in Headers */,
+				B186491014956F180053D71F /* DDXMLNode.h in Headers */,
+				B186491214956F180053D71F /* DDXMLPrivate.h in Headers */,
+				B186491314956F180053D71F /* ABNotice.h in Headers */,
+				B186491514956F180053D71F /* ABNotifier.h in Headers */,
+				B186491714956F180053D71F /* ABNotifierDelegate.h in Headers */,
+				B186491814956F180053D71F /* ABNotifierFunctions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B18648CD149565B90053D71F /* Airbrake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18648DB149565B90053D71F /* Build configuration list for PBXNativeTarget "Airbrake" */;
+			buildPhases = (
+				B18648CA149565B90053D71F /* Sources */,
+				B18648CB149565B90053D71F /* Frameworks */,
+				B18648CC149565B90053D71F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Airbrake;
+			productName = Airbrake;
+			productReference = B18648CE149565B90053D71F /* libAirbrake.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B18648C5149565B90053D71F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = TrikeApps;
+			};
+			buildConfigurationList = B18648C8149565B90053D71F /* Build configuration list for PBXProject "Airbrake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				es,
+				fr,
+				nl,
+				ro,
+				ru,
+				"zh-Hant",
+			);
+			mainGroup = B18648C3149565B90053D71F;
+			productRefGroup = B18648CF149565B90053D71F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B18648CD149565B90053D71F /* Airbrake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B18648CA149565B90053D71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B186490614956F180053D71F /* GCAlertView.m in Sources */,
+				B186490814956F180053D71F /* DDXMLElementAdditions.m in Sources */,
+				B186490A14956F180053D71F /* NSString+DDXML.m in Sources */,
+				B186490D14956F180053D71F /* DDXMLDocument.m in Sources */,
+				B186490F14956F180053D71F /* DDXMLElement.m in Sources */,
+				B186491114956F180053D71F /* DDXMLNode.m in Sources */,
+				B186491414956F180053D71F /* ABNotice.m in Sources */,
+				B186491614956F180053D71F /* ABNotifier.m in Sources */,
+				B186491914956F180053D71F /* ABNotifierFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B18648FC14956F180053D71F /* HTNotifier.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18648FD14956F180053D71F /* de */,
+				B18648FE14956F180053D71F /* en */,
+				B18648FF14956F180053D71F /* es */,
+				B186490014956F180053D71F /* fr */,
+				B186490114956F180053D71F /* nl */,
+				B186490214956F180053D71F /* ro */,
+				B186490314956F180053D71F /* ru */,
+				B186490414956F180053D71F /* zh-Hant */,
+			);
+			name = HTNotifier.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B18648D9149565B90053D71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B18648DA149565B90053D71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B18648DC149565B90053D71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Airbrake.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Airbrake/Airbrake-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B18648DD149565B90053D71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Airbrake.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Airbrake/Airbrake-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B18648C8149565B90053D71F /* Build configuration list for PBXProject "Airbrake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18648D9149565B90053D71F /* Debug */,
+				B18648DA149565B90053D71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18648DB149565B90053D71F /* Build configuration list for PBXNativeTarget "Airbrake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18648DC149565B90053D71F /* Debug */,
+				B18648DD149565B90053D71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B18648C5149565B90053D71F /* Project object */;
+}
