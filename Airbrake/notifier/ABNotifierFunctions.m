@@ -240,7 +240,7 @@ NSArray *ABNotifierParseCallStack(NSArray *callStack) {
         NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:pattern options:(NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators) error:nil];
         NSArray *components = [expression matchesInString:line options:NSMatchingReportCompletion range:NSMakeRange(0, [line length])];
         NSMutableArray *frame = [NSMutableArray arrayWithCapacity:[components count]];
-        [components enumerateObjectsUsingBlock:^(id result, NSUInteger idx, BOOL *stop) {
+        [components enumerateObjectsUsingBlock:^(id result, NSUInteger index, BOOL *s) {
             for (NSUInteger i = 0; i < [result numberOfRanges]; i++) {
                 [frame addObject:[line substringWithRange:[result rangeAtIndex:i]]];
             }
@@ -251,12 +251,12 @@ NSArray *ABNotifierParseCallStack(NSArray *callStack) {
 }
 NSString *ABNotifierActionFromParsedCallStack(NSArray *callStack, NSString *executable) {
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id obj, NSDictionary *bindings) {
-        if (![[obj objectAtIndex:2] isEqualToString:executable]) { return NO; }
-        NSRange range = [[obj objectAtIndex:3] rangeOfString:@"ht_handle_signal"];
+        if (![[(NSArray *)obj objectAtIndex:2] isEqualToString:executable]) { return NO; }
+        NSRange range = [[(NSArray *)obj objectAtIndex:3] rangeOfString:@"ht_handle_signal"];
         return range.location == NSNotFound;
     }];
     NSArray *matching = [callStack filteredArrayUsingPredicate:predicate];
-    if ([matching count]) { return [[matching objectAtIndex:0] objectAtIndex:3]; }
+    if ([matching count]) { return [(NSArray *)[matching objectAtIndex:0] objectAtIndex:3]; }
     else { return nil; }
 }
 
@@ -344,3 +344,15 @@ NSString *ABNotifierVisibleViewControllerFromViewController(UIViewController *co
 	
 }
 #endif
+
+#pragma mark - localization
+
+NSString *ABLocalizedString(NSString* key) {
+    static NSBundle *bundle = nil;
+    static dispatch_once_t token;
+    dispatch_once(&token, ^{
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ABNotifier" ofType:@"bundle"];
+        bundle = [[NSBundle alloc] initWithPath:path];
+    });
+    return [bundle localizedStringForKey:key value:key table:nil];
+}

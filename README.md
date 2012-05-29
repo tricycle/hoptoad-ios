@@ -1,8 +1,8 @@
 # About
 
-The Airbrake iOS Notifier is designed to give developers instant notification of problems that occur in their apps. With just a few lines of code and a few extra files in your project, your app will automatically phone home whenever a crash or exception is encountered. These reports go straight to [Airbrake](http://airbrakeapp.com) where you can see information like backtrace, device type, app version, and more.
+The Airbrake iOS Notifier is designed to give developers instant notification of problems that occur in their apps. With just a few lines of code and a few extra files in your project, your app will automatically phone home whenever a crash or exception is encountered. These reports go straight to [Airbrake](http://airbrake.io) where you can see information like backtrace, device type, app version, and more.
 
-To see how this might help you, check out [this screencast](http://guicocoa.com/hoptoad#screencast). If you have questions or need support, please visit [Airbrake support](http://help.airbrakeapp.com/discussions/ios-notifier)
+To see how this might help you, check out [this screencast](http://guicocoa.com/airbrake). If you have questions or need support, please visit [Airbrake support](http://help.airbrake.io/discussions/ios-notifier)
 
 The notifier requires iOS 4.0 or higher for iOS projects and Mac OS 10.7 or higher for Mac OS projects.
 
@@ -27,13 +27,12 @@ In order for the call stack to be properly symbolicated at the time of a crash, 
 
 # Versioning
 
-Airbrake supports a version floor for reported notices. A setting called "Latest app version" is available in your project settings that lets you specify the lowest app version for which crashes will be saved. This version is compared using [semantic versioning](http://semver.org/). The notifier uses your `CFBundleVersion` to make this comparison. If you have apps in the wild that are using an older notifier version and don't report this bundle version, the notices will dropped by Airbrake. For more information on how this is implemented, read this [knowledge base article](http://help.airbrakeapp.com/kb/ios/app-versions).
+Airbrake supports a version floor for reported notices. A setting called "Latest app version" is available in your project settings that lets you specify the lowest app version for which crashes will be saved. This version is compared using [semantic versioning](http://semver.org/). The notifier uses your `CFBundleVersion` to make this comparison. If you have apps in the wild that are using an older notifier version and don't report this bundle version, the notices will dropped by Airbrake. For more information on how this is implemented, read this [knowledge base article](http://help.airbrake.io/kb/ios/app-versions).
 
 # Installation
 1. Drag the Airbrake folder to your project and make sure "Copy Items" and "Create Groups" are selected
 2. Add `SystemConfiguration.framework` and `libxml2.dylib` to your project
 3. Add the path `/usr/include/libxml2` to Header Search Paths in your project's build settings under "All Configurations"
-4. Check the supported localizations of your app under your project settings. Xcode will automatically add all languages that the Airbrake notifier supports to the list of supported languages of your app, so you might want to delete some of them.
 
 ## Upgrading
 Please remove all of the resources used by the notifier from your project before upgrading. This is the best way to make sure all of the appropriate files are present and no extra files exist.
@@ -139,7 +138,7 @@ The `ABNotifierDelegate` protocol allows you to respond to actions going on insi
 @end
 ````
 
-#Contributors
+# Contributors
 
 - [Caleb Davenport](http://guicocoa.com)
 - [Marshall Huss](http://twoguys.us)
